@@ -7,6 +7,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SocialMediaButtomComponent } from './components/social-media-buttom/social-media-buttom.component';
+import { FooterComponent } from './components/footer/footer.component';
 //import { CarouselComponent } from './pages/home/carousel/carousel.component';
 
 @NgModule({
@@ -14,6 +15,7 @@ import { SocialMediaButtomComponent } from './components/social-media-buttom/soc
     AppComponent,
     NavbarComponent,
     SocialMediaButtomComponent,
+    FooterComponent,
     
     
     

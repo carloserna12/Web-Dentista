@@ -5,7 +5,7 @@ import { PrincipalViewHomeComponent } from './principal-view-home/principal-view
 const routes: Routes = [{
   path:'',
   children:[
-      {path:'principal',component:PrincipalViewHomeComponent},
+      {path:'',component:PrincipalViewHomeComponent},
       {path:'**',redirectTo:'principal'},
     ]
   }];
