@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { PagesRoutingModule } from './pages-routing.module';
 import { ServicesComponent } from './services/services.component';
-import { ContactComponent } from './contact/contact.component';
+
 import { BiographyComponent } from './biography/biography.component';
 import { CarouselComponent } from '../home/componentsHome/carousel/carousel.component';
 
@@ -12,7 +12,7 @@ import { CarouselComponent } from '../home/componentsHome/carousel/carousel.comp
 @NgModule({
   declarations: [
     ServicesComponent,
-    ContactComponent,
+    
     BiographyComponent
   ],
   imports: [

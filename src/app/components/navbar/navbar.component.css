@@ -8,12 +8,14 @@
 }
 .wrapper{
   background: #171c24;
-  /*position: fixed;*/
+  position: fixed;/*quitar para "solucionar"*/
   width: 100%;
   top: 0;
   right: 0;
   left: 0;
   z-index: 1030;
+  
+  box-shadow: 0 0 3px 3px #1a1a1a;
 
 }
 .wrapper nav{

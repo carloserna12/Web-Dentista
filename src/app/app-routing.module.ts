@@ -9,6 +9,9 @@ const routes: Routes = [
     path:'pages',loadChildren:()=> import('./pages/pages.module').then(m=>m.PagesModule)
   },
   {
+    path:'contact',loadChildren:()=> import('./contact/contact.module').then(m=>m.ContactModule)
+  },
+  {
     path:'**',redirectTo:'home'
   }
 ];

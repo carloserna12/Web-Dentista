@@ -54,6 +54,7 @@
 }
 
 .card-container{
+    box-shadow: 1px 1px 5px;
     box-sizing: border-box;
     /*margin: 0;*/
     width: 24% !important;
