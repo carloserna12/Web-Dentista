@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SocialMediaButtomComponent } from './components/social-media-buttom/social-media-buttom.component';
 //import { CarouselComponent } from './pages/home/carousel/carousel.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
+    SocialMediaButtomComponent,
     
     
     
