@@ -1,0 +1,17 @@
+<div class="place">
+    <div class="ft-recipe" *ngFor="let tratamiento of tratamientos">
+        <div class="ft-recipe__thumb">
+            <img class="image" [ngStyle]="{ backgroundImage: 'url('+tratamiento.image+')' }" />
+        </div>
+        <div class="ft-recipe__content">
+            <header class="content__header">
+                <div class="row-wrapper">
+                    <h2 class="recipe-title">{{tratamiento.name}}</h2>
+                    <div class="user-rating"></div>
+                </div>
+            </header>
+            <p class="description">
+                {{tratamiento.description}}</p>
+        </div>
+    </div>
+</div>
