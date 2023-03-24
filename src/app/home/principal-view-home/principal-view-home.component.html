@@ -1,78 +1,85 @@
 <app-carousel></app-carousel>
 
-<div class="grid-layout">
+
    <div class="cage c1">
-      <h1>Dr. Jorge Alejandro </h1>
+      <div class="banner animated tada">
+         <div class="content">Dr Jorge Alejandro Robles</div>
+      </div>
    </div>
-</div>
-<div class="list">
+
+
    <div class="cage c2">
       <div class="card-container">
-         <a href="#" class="btn btn-primary"><img class="card-img-top"
+         <img class="card-img-top"
                src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="Card image cap">
             <div class="card-body">
                <h5 class="card-title">Card title</h5>
                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                   card's content.</p>
             </div>
-         </a>
+         
       </div>
       <div class="card-container">
-         <a href="#" class="btn btn-primary"><img class="card-img-top"
+         <img class="card-img-top"
                src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="Card image cap">
             <div class="card-body">
                <h5 class="card-title">Card title</h5>
                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                   card's content.</p>
             </div>
-         </a>
+         
       </div>
       <div class="card-container">
-         <a href="#" class="btn btn-primary"><img class="card-img-top"
+        <img class="card-img-top"
                src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="Card image cap">
             <div class="card-body">
                <h5 class="card-title">Card title</h5>
                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                   card's content.</p>
             </div>
-         </a>
+         
       </div>
       <div class="card-container">
-         <a href="#" class="btn btn-primary"><img class="card-img-top"
+         <img class="card-img-top"
                src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="Card image cap">
             <div class="card-body">
                <h5 class="card-title">Card title</h5>
                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                   card's content.</p>
             </div>
-         </a>
+         
       </div>
+   
    </div>
 
 
-
-
-
-
-   <div class="cage c3">
-      <h1>Mira todos nuestros tratamientos</h1>
+   <div class="cage c1">
+      <div class="banner animated tada">
+         <div class="content">Mira todos nuestros planes...</div>
+      </div>
    </div>
-
-   <div class="container" >
-      <div class="card" *ngFor="let tratamiento of selectedTratamientos">
-         <div class="img">
-            <img class="image" [ngStyle]="{ backgroundImage: 'url('+tratamiento.image+')' }">
-         </div>
-         <div class="top-text">
-            <div class="name">
-               {{tratamiento.name}}
+   <div class="cage c1">
+      <div class="container">
+         <div class="card" *ngFor="let tratamiento of selectedTratamientos">
+            <div class="img">
+               <img class="image" [ngStyle]="{ backgroundImage: 'url('+tratamiento.image+')' }">
             </div>
-         </div>
-         <div class="bottom-text">
-            <div class="text">
-               {{tratamiento.description}}
+            <div class="top-text">
+               <div class="name">
+                  {{tratamiento.name}}
+               </div>
+            </div>
+            <div class="bottom-text">
+               <div class="text">
+                  {{tratamiento.description}}
+               </div>
             </div>
          </div>
       </div>
 
+   </div>
+   <div class="cage c1">
+      <div class="banner animated tada">
+         <div class="content">Atencion en horario de oficina</div>
+      </div>
    </div>
