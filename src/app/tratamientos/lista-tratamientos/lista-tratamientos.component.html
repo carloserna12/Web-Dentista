@@ -1,5 +1,12 @@
+
+<div class="baner-adicional">
+    <div>
+      <h1>Nuestros tratamientos  </h1>
+    </div>
+</div>
+
 <div class="place">
-    <div class="ft-recipe" *ngFor="let tratamiento of tratamientos">
+    <div class="ft-recipe" *ngFor="let tratamiento of tratamientos | paginate: { itemsPerPage: 10, currentPage: p }">
         <div class="ft-recipe__thumb">
             <img class="image" [ngStyle]="{ backgroundImage: 'url('+tratamiento.image+')' }" />
         </div>
@@ -15,3 +22,5 @@
         </div>
     </div>
 </div>
+
+<pagination-controls (pageChange)="p = $event"></pagination-controls>

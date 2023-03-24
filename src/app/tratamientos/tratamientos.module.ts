@@ -5,7 +5,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { TratamientosRoutingModule } from './tratamientos-routing.module';
 import { ListaTratamientosComponent } from './lista-tratamientos/lista-tratamientos.component';
 import { AgregarTratamientosComponent } from './agregar-tratamientos/agregar-tratamientos.component';
-
+import { NgxPaginationModule } from 'ngx-pagination';
 
 @NgModule({
   declarations: [
@@ -16,7 +16,8 @@ import { AgregarTratamientosComponent } from './agregar-tratamientos/agregar-tra
     CommonModule,
     TratamientosRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgxPaginationModule
   ]
 })
 export class TratamientosModule { }

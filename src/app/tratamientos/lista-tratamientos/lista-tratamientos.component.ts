@@ -8,14 +8,15 @@ import { ServiciosOdontologiaService } from 'src/app/service/servicios-odontolog
 })
 export class ListaTratamientosComponent implements OnInit{
   tratamientos: TratamientosInterfaz[];
+  p: number = 1;
 
   constructor(
     private tratamientoService:ServiciosOdontologiaService
   ) {
     this.tratamientos = [{
-      name: 'Prueba de sitio',
-      description: 'Esto es una prueba',
-      image: 'https://media.timeout.com/images/105718969/750/422/image.jpg'
+      name: "",
+      description:"",
+      image:""
     }];
   }
 
@@ -24,10 +25,7 @@ export class ListaTratamientosComponent implements OnInit{
       this.tratamientos = tratamientos;
     })
   }
-  /*async onClickDelete(tratamient: TratamientosInterfaz) {
-    const response = await this.tratamientoService.deleteTratamiento(tratamient);
-    console.log(response);
-  }*/
+  
 
 
 
