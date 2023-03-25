@@ -34,10 +34,10 @@
       <div class="col mb-3">
         <h5>Redirecciones</h5>
         <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a routerLink="/home" class="nav-link p-0 text-muted">Principal</a></li>
-          <li class="nav-item mb-2"><a routerLink="/tratamientos/trat" class="nav-link p-0 text-muted">Tratamientos</a></li>
-          <li class="nav-item mb-2"><a routerLink="/contact" class="nav-link p-0 text-muted">Contacto</a></li>
-          <li class="nav-item mb-2"><a routerLink="/bibliografia/bi" class="nav-link p-0 text-muted">Biografia</a></li>
+          <li class="nav-item mb-2"><a routerLink="/home" class="nav-link p-0 text-muted" (click)="scrollToTop()">Principal</a></li>
+          <li class="nav-item mb-2"><a routerLink="/tratamientos/trat" class="nav-link p-0 text-muted" (click)="scrollToTop()">Tratamientos</a></li>
+          <li class="nav-item mb-2"><a routerLink="/contact" class="nav-link p-0 text-muted" (click)="scrollToTop()">Contacto</a></li>
+          <li class="nav-item mb-2"><a routerLink="/bibliografia/bi" class="nav-link p-0 text-muted" (click)="scrollToTop()">Biografia</a></li>
         </ul>
       </div>
     </footer>
@@ -53,9 +53,9 @@
       </a>
 
       <ul class="nav col-md-4 justify-content-end">
-        <li class="nav-item"><a routerLink="/legalidad/avisoLegal" class="nav-link px-2 text-muted">Aviso legal</a></li>
-        <li class="nav-item"><a routerLink="/legalidad/privacidad" class="nav-link px-2 text-muted">Privacidad</a></li>
-        <li class="nav-item"><a routerLink="/legalidad/cookies" class="nav-link px-2 text-muted">Cookies</a></li>
+        <li class="nav-item"><a routerLink="/legalidad/avisoLegal" class="nav-link px-2 text-muted" (click)="scrollToTop()">Aviso legal</a></li>
+        <li class="nav-item"><a routerLink="/legalidad/privacidad" class="nav-link px-2 text-muted" (click)="scrollToTop()">Privacidad</a></li>
+        <li class="nav-item"><a routerLink="/legalidad/cookies" class="nav-link px-2 text-muted" (click)="scrollToTop()">Cookies</a></li>
       </ul>
     </footer>
 

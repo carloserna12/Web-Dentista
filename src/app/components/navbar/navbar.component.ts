@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef,AfterViewInit } from '@angular/core';
 
 
 @Component({
@@ -7,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
-  
+  @ViewChild('myCheckbox') myCheckbox: any;
+
+  toggleCheckbox() {
+    this.myCheckbox.nativeElement.checked = !this.myCheckbox.nativeElement.checked;
+  }
+
+
 }
+  
+  

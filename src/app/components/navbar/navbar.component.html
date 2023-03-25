@@ -4,7 +4,7 @@
 <div class="wrapper  ">
   <nav>
 
-    <input type="checkbox" id="show-menu">
+    <input type="checkbox" id="show-menu" #myCheckbox>
     <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
     <div class="content ">
       
@@ -13,10 +13,10 @@
     <div class="content ">
 
       <ul class="links justify-content-end">
-        <li><a routerLink="/home">Principal</a></li>
-        <li><a routerLink="/tratamientos/trat">Tratamientos</a></li>
-        <li><a routerLink="/contact">Contacto</a></li>
-        <li><a routerLink="/bibliografia/bi">Biografia</a></li>
+        <li><a routerLink="/home" (click)="toggleCheckbox()">Principal</a></li>
+        <li><a routerLink="/tratamientos/trat" (click)="toggleCheckbox()">Tratamientos</a></li>
+        <li><a routerLink="/contact" (click)="toggleCheckbox()">Contacto</a></li>
+        <li><a routerLink="/bibliografia/bi" (click)="toggleCheckbox()">Biografia</a></li>
       </ul>
     </div>
 

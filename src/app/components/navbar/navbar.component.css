@@ -199,9 +199,12 @@ img {
   }
   nav #show-menu:checked ~ .content .links{
     left: 0%;
+    
   }
   .content .links li{
     margin: 15px 20px;
+    
+    
   }
   .content .links li a,
   .content .links li label{
