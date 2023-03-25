@@ -73,6 +73,10 @@
     max-height: 350px;
 
     align-items: center;
+
+    background: var(--white);
+    box-shadow: 0 0 88px 0 rgba(0, 0, 0, 0.1607843137);
+    overflow: hidden;
 }
 
 .btn-primary{
@@ -124,6 +128,9 @@ html,body{
   flex-wrap: nowrap;
   justify-content: space-between;
   max-width: 1440px;
+
+ 
+ 
 }
 .card{
   height: 280px;
@@ -135,6 +142,10 @@ html,body{
   flex-basis: 24%;
   flex-grow: 1;
   margin-bottom: 20px;
+  overflow: hidden;
+
+  background: var(--white);
+  box-shadow: 0 0 88px 0 rgba(0, 0, 0, 0.1607843137);
   overflow: hidden;
 }
 .card:hover{
@@ -256,6 +267,8 @@ html,body{
   color: #ffffff;
   text-align: center;
   width: 90%;
+  box-shadow: 0 0 88px 0 rgba(0, 0, 0, 0.1607843137);
+  overflow: hidden;
   
 }
 .big-text {

@@ -14,6 +14,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 40px;
+    max-width: 1520px;
 }
 
 .place .info {
@@ -194,4 +195,71 @@ a {
 .ft-recipe .ft-recipe__content .content__footer a:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 34px 0 rgba(255, 79, 135, 0.32);
+}
+
+
+.banner {
+  position: relative; /* Se necesita para posicionar el fondo semi-transparente */
+  width: 100%;
+  background: url(https://thumbnails.production.thenounproject.com/sGXkCVwptbxTaZiwoXhKCe7DO64=/fit-in/1000x1000/photos.production.thenounproject.com/photos/BE32C31A-9C7E-4EE8-B5B1-7C4250821A32.jpg);
+  background-size: cover;
+  font-size: 60px;
+  color: #ffffff;
+  text-align: center;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%; 
+  height: 100%; 
+  max-width: 1320px;
+  border-radius: 10px;
+}
+.banner::before {
+  content: ""; /* Crea un pseudo-elemento */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.39); /* Define el color de fondo semitransparente */
+  z-index: 1; /* Define el z-index solo para el fondo semitransparente */
+  pointer-events: none; /* Evita que el pseudo-elemento intercepte los eventos del mouse */
+  backdrop-filter: blur(1px); /* Agrega un efecto de desenfoque en el fondo semitransparente */
+  
+  border-radius: 10px;
+}
+
+.banner .content {
+  position: relative; /* Asegura que el contenido esté posicionado de forma relativa */
+  z-index: 2; /* Define el z-index solo para el contenido */
+  font-size: 60px;
+  color: #ffffff;
+  text-align: center;
+  width: 90%;
+  box-shadow: 0 0 88px 0 rgba(0, 0, 0, 0.1607843137);
+  overflow: hidden;
+  
+}
+.big-text {
+  font-size: 130px;
+  font-weight:800;
+  animation-delay: 1s;
+}
+.banner a {
+  display: inline-block;
+  background: #fff;
+  color: #36465d;
+  text-transform: uppercase;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 40px;
+  transition: .3s;
+}
+.banner a:hover {
+  background: #333;
+  color: #fff;
+  
 }

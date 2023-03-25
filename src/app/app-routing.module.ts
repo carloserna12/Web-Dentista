@@ -12,6 +12,12 @@ const routes: Routes = [
     path:'tratamientos',loadChildren:()=> import('./tratamientos/tratamientos.module').then(m=>m.TratamientosModule)
   },
   {
+    path:'legalidad',loadChildren:()=> import('./documentos-legales/documentos-legales.module').then(m=>m.DocumentosLegalesModule)
+  },
+  {
+    path:'bibliografia',loadChildren:()=> import('./bibliography/bibliography.module').then(m=>m.BibliographyModule)
+  },
+  {
     path:'**',redirectTo:'home'
   }
 ];

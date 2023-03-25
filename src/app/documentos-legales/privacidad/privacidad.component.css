@@ -1,0 +1,21 @@
+.cage {
+    background-color: #fff;
+    margin: 0 5%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-top: 20px;
+    text-align: justify !important;
+}
+
+li{
+    text-align: start !important;
+}
