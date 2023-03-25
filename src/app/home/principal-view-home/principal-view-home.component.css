@@ -79,24 +79,6 @@
     overflow: hidden;
 }
 
-.btn-primary{
-    --bs-btn-color: #000000 !important;
-    --bs-btn-bg: #ffffff00 !important; 
-    --bs-btn-border-color: #ffffff00 !important;
-    --bs-btn-hover-bg: #ebd9c4a9 !important;
-    --bs-btn-hover-color: #202020db;
-    --bs-btn-hover-border-color: #ffffff38;
-    --bs-btn-focus-shadow-rgb: 49,132,253;
-    --bs-btn-active-color: #000000;
-    --bs-btn-active-bg: #EFB810;
-    --bs-btn-active-border-color: #f7b900af;
-    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-color: #fff;
-    --bs-btn-disabled-bg: #EFB810;
-    --bs-btn-disabled-border-color: #f7b900af;
-
-
-}
 
 .h1{
     font-size: 2em;
@@ -107,20 +89,7 @@
 
 /*aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
 
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
-*{
-  /*margin: 0;*/
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-html,body{
-  height: 100%;
-  display: grid;
-  place-items: center;
-  background: #f2f2f2;
-  text-align: center;
-}
+
 .container{
   padding: 0 40px;
   display: flex;
@@ -246,23 +215,23 @@ html,body{
   border-radius: 10px;
 }
 .banner::before {
-  content: ""; /* Crea un pseudo-elemento */
+  content: ""; 
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.39); /* Define el color de fondo semitransparente */
-  z-index: 1; /* Define el z-index solo para el fondo semitransparente */
-  pointer-events: none; /* Evita que el pseudo-elemento intercepte los eventos del mouse */
-  backdrop-filter: blur(1px); /* Agrega un efecto de desenfoque en el fondo semitransparente */
+  background: rgba(0, 0, 0, 0.39);
+  z-index: 1; 
+  pointer-events: none; 
+  backdrop-filter: blur(1px); 
   
   border-radius: 10px;
 }
 
 .banner .content {
-  position: relative; /* Asegura que el contenido esté posicionado de forma relativa */
-  z-index: 2; /* Define el z-index solo para el contenido */
+  position: relative; 
+  z-index: 2; 
   font-size: 60px;
   color: #ffffff;
   text-align: center;
