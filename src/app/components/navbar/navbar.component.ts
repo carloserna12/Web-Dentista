@@ -11,6 +11,11 @@ export class NavbarComponent {
 
   toggleCheckbox() {
     this.myCheckbox.nativeElement.checked = !this.myCheckbox.nativeElement.checked;
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
   }
 
 
